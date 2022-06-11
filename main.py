@@ -1,6 +1,7 @@
 import valorant_gun as gun
 import brute_valo as brute
 import greedy_valo as greedy
+import time
 
 if __name__ == "__main__":
     print('Rules : 0/1 Sidearms, 0/1 Main Weapon (SMGs, Rifles, Snipers, Heavies), 1 Armor (At least you have a Sidearms or Main Weapon')
@@ -38,11 +39,15 @@ if __name__ == "__main__":
         print("Your weapon of choice range (Their max range)?",end=' ')
         criteria = list(map(int, input().split()))
         algorithm = input("Greedy/Brute? ")
+        start  = time.time()
         if(algorithm == 'Brute'):
             final = brute.brute_force(brute.make_loadout(goal, money, criteria, armor_type), money)
+            print("Brute Force time elapsed : ",end='')
         elif(algorithm == 'Greedy'):
             final = 'Blank'
-        
-        print(final)
+            print("Greddy time elapsed : ",end='')
+            
+        end = time.time()
+        print(f"Weapon : {final['Name']} <> Armor : {final['Armor']} <> Price : {final['Weight']} <> Value : {final['Value']}")
     
     print("!!!!!!!ACE!!!!!!!")
