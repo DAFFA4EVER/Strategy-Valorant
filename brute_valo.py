@@ -1,4 +1,4 @@
-from main import dmg_calculation
+from dmg_calc import dmg_calculation
 import valorant_gun as gun
 
 def make_loadout(goal_loadout, budget, criteria, armor):
