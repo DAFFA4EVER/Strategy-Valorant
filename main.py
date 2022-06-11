@@ -39,15 +39,16 @@ if __name__ == "__main__":
         print("Your weapon of choice range (Their max range)?",end=' ')
         criteria = list(map(int, input().split()))
         algorithm = input("Greedy/Brute? ")
-        start  = time.time()
+        start = time.time_ns()
         if(algorithm == 'Brute'):
             final = brute.brute_force(brute.make_loadout(goal, money, criteria, armor_type), money)
             print("Brute Force time elapsed : ",end='')
         elif(algorithm == 'Greedy'):
             final = 'Blank'
             print("Greddy time elapsed : ",end='')
-            
-        end = time.time()
+
+        end = time.time_ns()
+        print(f'{end-start}ns')
         print(f"Weapon : {final['Name']} <> Armor : {final['Armor']} <> Price : {final['Weight']} <> Value : {final['Value']}")
     
     print("!!!!!!!ACE!!!!!!!")
