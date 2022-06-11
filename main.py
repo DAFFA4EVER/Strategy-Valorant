@@ -2,20 +2,6 @@ import valorant_gun as gun
 import brute_valo as brute
 import greedy_valo as greedy
 
-def dmg_calculation(weapon_info, criteria):
-    w = weapon_info
-    c = criteria[0]
-    flag = True
-    n = 0
-    while(flag):
-        i = w['Damage'][n]
-        if(c <= i[1] and c > i[0]):
-            dmg_score = (i[2]*0.45) + (i[3]*0.15) + (i[4]*0.40)
-            dmg_score = dmg_score + (dmg_score*(w['Penetration']/10))
-            flag = False
-        n += 1
-    return dmg_score
-
 if __name__ == "__main__":
     print('Rules : 0/1 Sidearms, 0/1 Main Weapon (SMGs, Rifles, Snipers, Heavies), 1 Armor (At least you have a Sidearms or Main Weapon')
     print('Catalog : Sidearms, SMGs, Shotguns, Rifles, Snipers, Heavies, Armors, Anyweapon\n')
