@@ -41,7 +41,7 @@ if __name__ == "__main__":
         algorithm = input("Greedy/Brute? ")
         start = time.time_ns()
         if(algorithm == 'Brute'):
-            final = brute.brute_force(brute.make_loadout(goal, money, criteria, armor_type), money)
+            final = brute.brute_force(goal, money, criteria, armor_type)
             print("Brute Force time elapsed : ",end='')
         elif(algorithm == 'Greedy'):
             final = 'Blank'
