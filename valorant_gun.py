@@ -13,7 +13,7 @@ SMGs = [
 
 Shotguns = [
     {'Name': 'Bucky', 'Price': 900, 'Penetration': 1, 'Damage': [[0, 8, 22, 44, 19], [8, 12, 17, 34, 14], [12, 50, 9, 18, 8]], 'Mag': 5, 'Fire': 'SemiAutoSG', 'Type' : 'Shotguns'}, # for 1 pellet, total is 15
-    {'Name': 'Spectre', 'Price': 1600, 'Penetration': 2, 'Damage': [[0, 10, 17, 34, 14], [10, 15, 13, 26, 11], [15, 50, 10, 20, 9]], 'Mag': 7, 'Fire': 'AutoSG', 'Type' : 'Shotguns'} # for 1 pellet, total is 12
+    {'Name': 'Judge', 'Price': 1600, 'Penetration': 2, 'Damage': [[0, 10, 17, 34, 14], [10, 15, 13, 26, 11], [15, 50, 10, 20, 9]], 'Mag': 7, 'Fire': 'AutoSG', 'Type' : 'Shotguns'} # for 1 pellet, total is 12
 ]
 
 Rifles = [
@@ -25,7 +25,7 @@ Rifles = [
 
 Snipers = [
     {'Name': 'Marshal', 'Price': 1100, 'Penetration': 2, 'Damage': [[0, 50, 101, 202,85]], 'Mag': 5, 'Fire': 'Bolt', 'Type' : 'Snipers'}, 
-    {'Name': 'Guardian', 'Price': 4500, 'Penetration': 3, 'Damage': [[0, 50, 150, 255, 127]], 'Mag': 5, 'Fire': 'Bolt', 'Type' : 'Snipers'}
+    {'Name': 'Operator', 'Price': 4500, 'Penetration': 3, 'Damage': [[0, 50, 150, 255, 127]], 'Mag': 5, 'Fire': 'Bolt', 'Type' : 'Snipers'}
 ]
 
 Heavies = [
