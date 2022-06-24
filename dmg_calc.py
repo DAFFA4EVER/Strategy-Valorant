@@ -10,4 +10,5 @@ def dmg_calculation(weapon_info, criteria):
             dmg_score = dmg_score + (dmg_score*(w['Penetration']/10))
             flag = False
         n += 1
+    dmg_score = (dmg_score * 0.7) + (w['FRate'] * 0.3)
     return dmg_score
