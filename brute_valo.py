@@ -20,9 +20,9 @@ def brute_force(goal, criteria, armor_type, money):
     W = money
     n = len(val)
     for v in subsetSum(n, val, knapSack(W, wt, val, n)):
-        for p in loadout:
-            if(p['Value'] == v):
-                final.append(p)
+        for j in loadout:
+            if(j['Value'] == v):
+                final.append(j)
     return (final)
     
   
