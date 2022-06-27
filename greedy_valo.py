@@ -3,7 +3,7 @@ from calculation import dmg_calculation, make_loadout
 
 def greedy(goal, criteria, armor_type, money):
     final_loadout = make_loadout(goal, money, criteria, armor_type)
-    print(final_loadout)
+    #print(final_loadout)
     new_load = []
     if len(final_loadout) != 0:
         for i in final_loadout:
@@ -11,7 +11,7 @@ def greedy(goal, criteria, armor_type, money):
             i["Density"] = i["Value"] / i["Weight"]
         final_loadout = sorted(
             final_loadout, key=lambda d: d["Density"], reverse=True)
-        print(len(final_loadout))
+        #print(len(final_loadout))
 
         j = 0
         cred = money
