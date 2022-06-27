@@ -28,23 +28,16 @@ def brute_force(goal, criteria, armor_type, money):
   
 def subsetSum(n, arr, x):
     from itertools import combinations    
-    # Iterating through all possible
-    # subsets of arr from lengths 0 to n:
     for i in range(n+1):
         for subset in combinations(arr, i):
-            # printing the subset if its sum is x:
             if sum(subset) == x:
                 return (list(subset))
 
 def knapSack(W, wt, val, n):
- 
-    # Base Case
     if n == 0 or W == 0:
         return 0
- 
     if (wt[n-1] > W):
         return knapSack(W, wt, val, n-1)
-
     else:
         return max(
             val[n-1] + knapSack(
