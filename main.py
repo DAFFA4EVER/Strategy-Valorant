@@ -1,3 +1,4 @@
+from traceback import print_tb
 import valorant_gun as gun
 import brute_valo as brute
 import greedy_valo as greedy
@@ -44,12 +45,14 @@ if __name__ == "__main__":
             final = brute.brute_force(goal, criteria, armor_type, money)
             print("Brute Force time elapsed : ", end='')
         elif(algorithm == 'Greedy'):
-            final = 'Blank'
+            final = greedy.greedy(goal, criteria, armor_type, money)
             print("Greddy time elapsed : ", end='')
 
         end = time.time_ns()
         print(f'{end-start}ns')
-        print(
-            f"Weapon : {final['Name']} <> Armor : {final['Armor']} <> Price : {final['Weight']} <> Value : {final['Value']}")
+        for j in final:
+            print(j)
+        
+        print(f"This loadout enough for {len(final)} rounds")
 
     print("!!!!!!!ACE!!!!!!!")

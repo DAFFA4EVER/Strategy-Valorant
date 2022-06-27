@@ -40,7 +40,7 @@ def make_loadout(goal_loadout, budget, criteria, armor):
         value = value + g['Value']
         final_loadout.append(
             {'Name': g['Name'], 'Armor': armor_name, 'Weight': weight, 'Value': value})
-    print(final_loadout)
+    #print(final_loadout)
     return final_loadout
 
 
