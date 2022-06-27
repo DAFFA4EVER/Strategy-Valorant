@@ -52,7 +52,7 @@ if __name__ == "__main__":
         print(f'{end-start}ns')
         for j in final:
             print(j)
-        
+
         print(f"This loadout enough for {len(final)} rounds")
 
     print("!!!!!!!ACE!!!!!!!")
